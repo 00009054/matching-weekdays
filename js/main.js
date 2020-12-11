@@ -10,29 +10,28 @@ elMatchForm.addEventListener('submit', function (evt) {
   var number = Number(elNumberInput.value);
  
   if (number === 1){
-    message += 'Monday';
+    message = 'Monday';
   }
   if (number === 2){
-    message += 'Tuesday';
+    message = 'Tuesday';
   } 
   if (number === 3){
-    message += 'Wednesday';
+    message = 'Wednesday';
   } 
   if (number === 4){
-    message += 'Thursday';
+    message = 'Thursday';
   } 
   if (number === 5){
-    message += 'Friday';
+    message = 'Friday';
   } 
   if (number === 6){
-    message += 'Saturday';
+    message = 'Saturday';
   } 
   if (number === 7){
-    message += 'Sunday';
+    message = 'Sunday';
   } 
   if (number <= 0 || number > 7){
     message += '404 Error. Not Found';
-    elResult.classList.add('alert-danger')
   }
 
   elResult.classList.remove('d-none');
