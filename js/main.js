@@ -31,7 +31,7 @@ elMatchForm.addEventListener('submit', function (evt) {
     message = 'Sunday';
   } 
   if (number <= 0 || number > 7){
-    message += '404 Error. Not Found';
+    message = '404 Error. Not Found';
   }
 
   elResult.classList.remove('d-none');
